@@ -1,6 +1,6 @@
 # Learning-Android-Studios
 
-#Status :-
+# Status :-
 1. Cat switcher -> DONE
 2. Currency Converter -> DONE
 3. Fading Animation -> DONE
@@ -10,7 +10,7 @@
 7. Basic Phrases - > DONE(Not working)
 8. List -> DONE(Not working)
 
-#Folder Details :-
+# Folder Details :-
 1. MyApplication1 ---> BASIC TEXTVIEWS USED MY GREAT APP
 2. MyApplication  ---> LOGIN ID AND PASSWORD USING TEXTVIEWS AND A BUTTON WHICH SHOW INFO IN LOG CAT
 3. Logindemo      ---> DOING SAME THING AS ABOVE BUT SHOWING INFO USING TOAST  (Full of comments)
