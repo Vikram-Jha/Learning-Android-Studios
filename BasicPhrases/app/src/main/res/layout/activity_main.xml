@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:rowCount="4"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="207dp">
+
+        <!--we have added a lot of specification in the XML FILE see throughly-->
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:onClick="clicked"
+            android:text="Welcome !"
+            android:tag="Welcome"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:onClick="clicked"
+            android:text="Hello"
+            android:tag="Hello"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:onClick="clicked"
+            android:text="Good Evening!"
+            android:tag="Good Evening!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:onClick="clicked"
+            android:text="How are you?"
+            android:tag="How are you?"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:onClick="clicked"
+            android:tag="Do you speek English?"
+            android:text="Do you\n speek English?"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:text="I live in"
+            android:tag="I live in"
+            android:onClick="clicked"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:onClick="clicked"
+            android:text="My name is"
+            android:tag="My name is"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:onClick="clicked"
+            android:text="Please"
+            android:tag="Please"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+
+
+
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button1"
+            android:gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:text="Button" />
+        <!--android fill fill the button and when we specify the rowWeight and column weight it decide
+        how to fill it in all the directions
+
+        As we copy paste the the button get allocated according to gravity 1:1 ,2:1 , 3:1 and so on upto to 8:1-->
+        <Button
+            android:id="@+id/button2"
+            android:gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button3"
+            android:gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button4"
+            android:gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button5"
+            android:gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button6"
+            android:gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button7"
+            android:gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button8"
+            android:gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:text="Button" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
