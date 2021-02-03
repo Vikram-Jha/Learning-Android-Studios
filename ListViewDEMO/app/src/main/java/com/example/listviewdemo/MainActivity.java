@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //        //creating a method in which after clicking on one of the name or name name sothing happens
 //        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            //CREATING A CLICK LISTENER TO MAKE THE APPDO SOME ACTIVITY UPON CLICKING THE NAME
+//            //CREATING A CLICK LISTENER TO MAKE THE APP DO SOME ACTIVITY UPON CLICKING THE NAME
 //            @Override
 //            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //                Log.i("Person Selected", myFamily.get(position));
@@ -78,9 +78,9 @@ public class MainActivity extends AppCompatActivity {
         
         //challenge
         
-        ListView myListView = (ListView) findViewById(R.id.myListView);
+        ListView myListView = findViewById(R.id.myListView);
         
-        final ArrayList<String> myFriends = new ArrayList<String>(asList("Vikram","shreyam","krishna"));
+        final ArrayList<String> myFriends = new ArrayList<String>(asList("Vikram","Shreyam","Krishna","Chandan","Satyam"));
 //        ArrayList<String> myFriends = new ArrayList<String>();
 //        myFriends.add("Vikram");
 //        myFriends.add("Satyam");
@@ -88,14 +88,18 @@ public class MainActivity extends AppCompatActivity {
 //        myFriends.add("Shreyam");
 //        myFriends.add("Krishna");
 
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,myFriends);
+
+        myListView.setAdapter(arrayAdapter);
+
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-                        //CREATING A CLICK LISTENER TO MAKE THE APPDO SOME ACTIVITY UPON CLICKING THE NAME
+                        //CREATING A CLICK LISTENER TO MAKE THE APP DO SOME ACTIVITY UPON CLICKING THE NAME
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "Hello" + myFriends.get(position), Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), "Hello! " + myFriends.get(position), Toast.LENGTH_SHORT).show();
             }
         });
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
+
         
         myListView.setAdapter(arrayAdapter);
     }

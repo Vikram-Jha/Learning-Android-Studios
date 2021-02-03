@@ -8,7 +8,7 @@
 5. Video Control - > DONE
 6. Audio Control - > DONE
 7. Basic Phrases - > DONE(Not working)
-8. List -> DONE(Not working)
+8. List -> DONE
 
 # Folder Details :-
 1. MyApplication1 ---> BASIC TEXTVIEWS USED MY GREAT APP
