@@ -28,3 +28,7 @@
 17. Egg Timer -----> BASIC SIMPLE TIMER APP
 18. Hide UI Elements ----- > HIDING SOME OF FEATURES USING VISIBILITY THING
 19. Brain Trainer ---> A GAME IN WHICH USER PREDICTS SUM OF TWO NO. ITS ABOUT HOW MANY HE GETS RIGHT IN 30 SECONDS
+
+Extra :-
+
+try_and_catch.java = Explaining the concept of java try and catch
