@@ -6,6 +6,7 @@
 3. Basic Phrases - > DONE(Not working)
 4. Table app -> DONE
 5. Egg Timer -> DONE
+6. Brain Trainer -> DONE
 
 # Folder Details :-
 1. MyApplication1 ---> BASIC TEXTVIEWS USED MY GREAT APP
@@ -26,3 +27,4 @@
 16. Table App -----> USING SEEKBAR AND LIST VIEW A INTERACTIVE TABLE APP HAS BEEN MADE(No Comments)
 17. Egg Timer -----> BASIC SIMPLE TIMER APP
 18. Hide UI Elements ----- > HIDING SOME OF FEATURES USING VISIBILITY THING
+19. Brain Trainer ---> A GAME IN WHICH USER PREDICTS SUM OF TWO NO. ITS ABOUT HOW MANY HE GETS RIGHT IN 30 SECONDS
