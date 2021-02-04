@@ -1,16 +1,11 @@
 # Learning-Android-Studios
 
 # Status :-
-1. Cat switcher -> DONE
-2. Currency Converter -> DONE
-3. Fading Animation -> DONE
-4. TIC TAC TOE - > DONE
-5. Video Control - > DONE
-6. Audio Control - > DONE
-7. Basic Phrases - > DONE(Not working)
-8. List -> DONE
-9. Table app -> DONE
-10. Egg Timer -> DONE
+1. Currency Converter -> DONE
+2. TIC TAC TOE - > DONE
+3. Basic Phrases - > DONE(Not working)
+4. Table app -> DONE
+5. Egg Timer -> DONE
 
 # Folder Details :-
 1. MyApplication1 ---> BASIC TEXTVIEWS USED MY GREAT APP
@@ -30,3 +25,4 @@
 15. ListViewDEMO  ------> CREATING A LIST IN ANDROID APP  (Full of comments)
 16. Table App -----> USING SEEKBAR AND LIST VIEW A INTERACTIVE TABLE APP HAS BEEN MADE(No Comments)
 17. Egg Timer -----> BASIC SIMPLE TIMER APP
+18. Hide UI Elements ----- > HIDING SOME OF FEATURES USING VISIBILITY THING
