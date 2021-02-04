@@ -10,6 +10,7 @@
 7. Basic Phrases - > DONE(Not working)
 8. List -> DONE
 9. Table app -> DONE
+10. Egg Timer -> DONE
 
 # Folder Details :-
 1. MyApplication1 ---> BASIC TEXTVIEWS USED MY GREAT APP
@@ -28,3 +29,4 @@
 14. BasicPhrases2 -----> A ENGLISH TO FRENCH CONVERTER APP WITH SOME TWEAKS  (Full of comments)
 15. ListViewDEMO  ------> CREATING A LIST IN ANDROID APP  (Full of comments)
 16. Table App -----> USING SEEKBAR AND LIST VIEW A INTERACTIVE TABLE APP HAS BEEN MADE(No Comments)
+17. Egg Timer -----> BASIC SIMPLE TIMER APP
