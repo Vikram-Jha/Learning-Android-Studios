@@ -28,6 +28,9 @@
 17. Egg Timer -----> BASIC SIMPLE TIMER APP
 18. Hide UI Elements ----- > HIDING SOME OF FEATURES USING VISIBILITY THING
 19. Brain Trainer ---> A GAME IN WHICH USER PREDICTS SUM OF TWO NO. ITS ABOUT HOW MANY HE GETS RIGHT IN 30 SECONDS
+20. DownloadUI ----> To downlaod content from the internet and for that don't forget permission in manifest.
+21. DownloadingImage ----> Download Image form the internet of homer and bart.
+
 
 Extra :-
 

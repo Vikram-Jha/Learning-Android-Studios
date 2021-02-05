@@ -173,7 +173,8 @@
             android:textSize="30sp"
             app:layout_constraintEnd_toStartOf="@+id/scoreTextView"
             app:layout_constraintStart_toEndOf="@+id/counterTextView"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
