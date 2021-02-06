@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
                     TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
-                    winnerTextView.setText(winner + " has Won !");
+                    winnerTextView.setText(winner + " Won !");
                     playAgainButton.setVisibility(View.VISIBLE);
                     winnerTextView.setVisibility(View.VISIBLE);
                 }
