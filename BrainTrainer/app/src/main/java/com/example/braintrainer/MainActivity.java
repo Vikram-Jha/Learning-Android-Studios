@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                resultTextView.setText("Done");
+                resultTextView.setText("Game Over !");
                 playAgainButton.setVisibility(View.VISIBLE);
                 playeractive=false;
 

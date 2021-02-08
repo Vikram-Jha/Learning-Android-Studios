@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@drawable/abc"
     tools:context=".MainActivity">
 
     <Button
@@ -26,17 +26,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gamelayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/resultTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="108dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="108dp"
-            android:layout_marginBottom="66dp"
+            android:layout_marginBottom="10dp"
             android:text="Correct!"
+            android:textColor="@color/white"
             android:textSize="50sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
@@ -77,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="129dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="130dp"
             android:onClick="PlayAgain"
             android:text="Play Again !"
@@ -166,14 +171,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="40dp"
             android:padding="15dp"
             android:paddingTop="15dp"
             android:text="31 + 7"
+            android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_constraintEnd_toStartOf="@+id/scoreTextView"
             app:layout_constraintStart_toEndOf="@+id/counterTextView"
-            tools:layout_editor_absoluteY="16dp"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
