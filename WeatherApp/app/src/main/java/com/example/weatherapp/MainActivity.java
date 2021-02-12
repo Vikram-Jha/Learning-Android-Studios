@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     final String APP_ID = "dab3af44de7d24ae7ff86549334e45bd";
-    final String WEATHER_URL = "api.openweathermap.org/data/2.5/weather";
+    final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
 
     final long MIN_TIME = 5000;
     final float MIN_DISTANCE = 1000;

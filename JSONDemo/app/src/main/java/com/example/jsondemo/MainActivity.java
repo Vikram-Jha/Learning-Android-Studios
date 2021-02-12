@@ -42,7 +42,27 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            Log.i("JSON",s);
+
+            try{
+                JSONObject jsonObject = new JSONObject(s);
+
+                String weatherInfo = jsonObject.getString("weather");
+
+                Log.i("Weather Content", weatherInfo);
+
+                JSONArray jsonArray = new JSONArray(weatherInfo);
+
+                for(int i=0 ; i<jsonArray.length() ; i++){
+                    JSONObject jsonPart = jsonArray.getJSONObject(i);
+
+                    Log.i("main",jsonPart.getString("main"));
+                    Log.i("description",jsonPart.getString("description"));
+
+                }
+//
+            } catch (Exception e){
+                e.printStackTrace();
+            }
 
         }
     }
@@ -53,6 +73,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         DownloadTask task = new DownloadTask();
-        task.execute("http://api.openweathermap.org/data/2.5/weather?id=1261481&appid=bcbf4d9df5b112f893d08e1bd1c3b197");
+        task.execute("https://api.openweathermap.org/data/2.5/weather?q=Kolkata&appid=bcbf4d9df5b112f893d08e1bd1c3b197");
     }
 }
