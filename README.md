@@ -7,6 +7,7 @@
 4. Table app -> DONE
 5. Egg Timer -> DONE
 6. Brain Trainer -> DONE
+7. Weather App -> DONE
 
 # Folder Details :-
 1. MyApplication1 ---> BASIC TEXTVIEWS USED MY GREAT APP
