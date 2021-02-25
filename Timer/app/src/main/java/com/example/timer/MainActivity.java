@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Log.i("Hey ! It's us","A second just passed");
-
                 handler.postDelayed(this,1000);
             }
         };
@@ -28,19 +27,20 @@ public class MainActivity extends AppCompatActivity {
   */
         //Another way of doing it
 
-        //For CountDownTime is built in class which calculated the value of max time and dec it automatically
+        //CountDownTime is built in class which calculated the value of current time and decreases it automatically
         //onTick and onFinish are its member function/member method.
-        new CountDownTimer(10000,1000){
+        new CountDownTimer(10000,1000){ //10000 ms =10sec is upper limeit which means timer will run for 10sec
+            // and its interval period is of 1sec. 1000ms = 1second
             @Override
-            public void onTick(long milliSecondsUntilDone){
+            public void onTick(long milliSecondsUntilDone){ //OnEvery interval that's tick it executes a function OnTick
 
                 Log.i("Seconds Left !",String.valueOf(milliSecondsUntilDone/1000));
             }
 
-            public void onFinish(){
+            public void onFinish(){        ////OnFinish i.e when timer end, it executes a function OnFinish
                 Log.i("No more countdown","Timer value reached the end.");
             }
 
-        }.start(); //.start() starts the timer 
+        }.start(); //.start() starts the timer as soon app is open
     }
 }

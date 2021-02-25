@@ -13,8 +13,7 @@ public class MainActivity extends AppCompatActivity {
         //Create a new folder raw inside the res folder by right clicking on res folder
         // and clicking on show explorer and paste your video inside that for latter use
         // Create a VideoView in the layout
-        // we are writing here in override folder since we want to play the video as
-        //as soon we open the app
+        // we are writing here in on create since we want to play the video as soon we open the app
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);

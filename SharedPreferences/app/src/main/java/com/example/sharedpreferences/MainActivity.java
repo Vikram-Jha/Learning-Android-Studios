@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //SharedPreferences sharedPreferences = this.getSharedPreferences("com.example.sharedprefrences", Context.MODE_PRIVATE);
-
+        //Stores the data in phones storage in key value pairs
         // Even after commenting out below line of code the data was saved in the app
         // after restarting the application it worked out nicely
         //sharedPreferences.edit().putString("Username","Vikram").apply();
@@ -35,10 +35,17 @@ public class MainActivity extends AppCompatActivity {
         friends.add("John");
 
       try {
-          sharedPreferences.edit().putString("Friends",ObjectSerializer.serialize(friends)).apply();
+          sharedPreferences.edit().putString("friends",ObjectSerializer.serialize(friends)).apply();
       } catch (Exception e){
           e.printStackTrace();
       }
 
+      ArrayList<String> newFriends = new ArrayList<>();
+        try {
+    newFriends = (ArrayList<String>) ObjectSerializer.deserialize(sharedPreferences.getString("friends", ObjectSerializer.serialize(new ArrayList<>())));
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        Log.i("Friends",newFriends.toString());
     }
 }

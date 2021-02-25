@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
            }
            catch (Exception e){
                e.printStackTrace();
-               Toast.makeText(getApplicationContext(),"Couldn't Find Weather :(",Toast.LENGTH_SHORT).show();
+               Toast.makeText(getApplicationContext(),"Sorry! Couldn't Find Weather!",Toast.LENGTH_SHORT).show();
                return null;
            }
         }
@@ -57,27 +57,47 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(result);
             try{
                 JSONObject jsonObject = new JSONObject(result);
-                String weatherInfo = jsonObject.getString("main");
-                /*temp":288.15,
-                "feels_like":288.29,
-                        "temp_min":288.15,
-                        "temp_max":288.15,
-                        "pressure":1014,
-                        "humidity":88*/
-                weatherInfo = weatherInfo.replace("\"temp\"","Temprature ");
-                weatherInfo = weatherInfo.replace(",","\n");
-                weatherInfo = weatherInfo.replace("\"feels_like\"","Feels like ");
-                weatherInfo = weatherInfo.replace("\"temp_min\"","Temp. Min ");
-                weatherInfo = weatherInfo.replace("\"temp_max\"","Temp. Max ");
-                weatherInfo = weatherInfo.replace("\"pressure\"","Pressure ");
-                weatherInfo = weatherInfo.replace("\"humidity\"","Humidity ");
-                weatherInfo = weatherInfo.replace("{","");
-                weatherInfo = weatherInfo.replace("}","");
+                String weatherInfo ;
+//                        = jsonObject.getString("main");
+//                {
+//                    "coord":{
+//                    "lon":77.2167,
+//                            "lat":28.6667
+//                },
+//                    "weather":[
+//                    {
+//                        "id":711,
+//                            "main":"Smoke",
+//                            "description":"smoke",
+//                            "icon":"50d"
+//                    }
+//   ],
+//                    "base":"stations",
+//                        "main":{
+//                    "temp":298.81,
+//                            "feels_like":299.18,
+//                            "temp_min":297.15,
+//                            "temp_max":300.15,
+//                            "pressure":1015,
+//                            "humidity":47
+//                },
+//                    "visibility":2000,
+
+
+                String city="City: "+jsonObject.getString("name");
+                String WeatherType ="Weather Type: "+jsonObject.getJSONArray("weather").getJSONObject(0).getString("main");
+                String pressure = "Pressure: "+Integer.toString(jsonObject.getJSONObject("main").getInt("pressure"))+" mBar";
+                String humidity = "Humidity: "+Integer.toString(jsonObject.getJSONObject("main").getInt("humidity")) + " %";
+                double tempResult=jsonObject.getJSONObject("main").getDouble("temp")-273.15; //degree celcius me dega
+                int roundedValue=(int)Math.rint(tempResult);
+                String Temperature="Temperature: "+Integer.toString(roundedValue)+" °C";
+                weatherInfo = "Fetched Details..."+ "\n" +  "\n" + "\n" +city + "\n" + Temperature +  "\n" + pressure + "\n" + humidity + "\n" + WeatherType ;
                 message.setText(weatherInfo);
             }
             catch (Exception e){
+                Toast.makeText(getApplicationContext(),"Sorry! Couldn't Find Weather!",Toast.LENGTH_SHORT).show();
                 e.printStackTrace();
-                Toast.makeText(getApplicationContext(),"Couldn't Find Weather :(",Toast.LENGTH_SHORT).show();
+
             }
 
         }
@@ -98,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Button Clicked !", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Finding Weather !", Toast.LENGTH_SHORT).show();
                 String cityName = city.getText().toString();
 
                 //changed http to https and it worked like magic??//

@@ -8,6 +8,7 @@
 5. Egg Timer -> DONE
 6. Brain Trainer -> DONE
 7. Weather App -> DONE
+8. Notes App -> DONE
 
 # Folder Details :-
 1. MyApplication1 ---> BASIC TEXTVIEWS USED MY GREAT APP
@@ -26,17 +27,25 @@
 14. BasicPhrases2 -----> A ENGLISH TO FRENCH CONVERTER APP WITH SOME TWEAKS  (Full of comments)
 15. ListViewDEMO  ------> CREATING A LIST IN ANDROID APP  (Full of comments)
 16. Table App -----> USING SEEKBAR AND LIST VIEW A INTERACTIVE TABLE APP HAS BEEN MADE(No Comments)
-17. Egg Timer -----> BASIC SIMPLE TIMER APP
-18. Hide UI Elements ----- > HIDING SOME OF FEATURES USING VISIBILITY THING
-19. Brain Trainer ---> A GAME IN WHICH USER PREDICTS SUM OF TWO NO. ITS ABOUT HOW MANY HE GETS RIGHT IN 30 SECONDS
-20. DownloadUI ----> To downlaod content from the internet and for that don't forget permission in manifest.
-21. DownloadingImage ----> Download Image form the internet of homer and bart.
-22. Processing Json Object ---> Open weather api used in this
-23. WeatherAPP2 --- > Made weather APP
-24. Mausam APP ---- > extra
-25. WeatherAPP ------> Big chull is occuring there.
-
+17. Timer --> Explaining Timer concepts.
+18. Egg Timer -----> BASIC SIMPLE TIMER APP
+19. Hide UI Elements ----- > HIDING SOME OF FEATURES USING VISIBILITY THING
+20. Brain Trainer ---> A GAME IN WHICH USER PREDICTS SUM OF TWO NO. ITS ABOUT HOW MANY HE GETS RIGHT IN 30 SECONDS
+21. DownloadUI ----> To downlaod content from the internet and for that don't forget permission in manifest.
+22. DownloadingImage ----> Download Image form the internet of homer and bart.
+23. GuesstheCelebrity ---->  Not working since url has expired 
+24. Processing Json Object ---> Open weather api used in this
+25. WeatherAPP2 --- > Made weather APP
+26. Mausam APP ---- > Working basic weather app 
+27. WeatherAPP ------> working properly.
+28. WeatherApp2 ------> Brijesh weather app.
+29. SwitchingActivities ---- > How to add multiple activities
+30. SharedPreferences ----> Storing Data permanently 
+31. MenuDemo ----> Adding Menu and perfroming some task on top of it.
+32. AlertDialogueDEMO ----> SHOWING AN ALERT THEN DELETING SOMETHING
+33. NotesApp ---> Simple to do list using shared prefrences and alertdemo
+34. Database ---> DataBase Queries 
+35. webview ---- > To display content from web directly or displaying raw html
 
 Extra :-
-
 try_and_catch.java = Explaining the concept of java try and catch

@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-      public void chooliyatumne(View view){
+      public void chooliyatumne(View view){                        //chooliyatumne is a onClick Function of search button
           EditText nameEditText = (EditText) findViewById(R.id.nameEditText);
 
           Log.i("values", nameEditText.getText().toString());

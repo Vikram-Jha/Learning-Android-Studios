@@ -92,7 +92,7 @@ public class weatherData {
     }
 
     public String getmTemperature() {
-        return mTemperature+"°C";
+        return mTemperature ;
     }
 
     public String getMicon() {

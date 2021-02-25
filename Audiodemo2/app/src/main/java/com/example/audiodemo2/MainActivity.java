@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.media.TimedMetaData;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         SeekBar volumeControl = (SeekBar) findViewById(R.id.seekBar);
         //Setting the max limit of seekBar to maxVolume of our device
         volumeControl.setMax(maxVolume);
-        //Setting the currrent Value of  seekBar to currentVolume of our device
+        //Setting the currrent Value of seekBar to currentVolume of our device
         volumeControl.setProgress(currentVolume);
         //As the seekBar is changed by the user the sound also change according to that
         volumeControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() { //We only write then rest of the code comes automatically
@@ -53,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
                 Log.i("SeekBar Changed",Integer.toString(progress));
-                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, progress,0); //Setting Up the audio in the accordance of where the seekbar progress is.
+                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, progress,0);
+                //Setting Up the audio in the accordance of where the seekbar progress is.
 
             }
 
